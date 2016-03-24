@@ -13,7 +13,7 @@ describe('Routes', function () {
 		it('should have the correct URL', function () {
 			state = $state.get('home');
 
-			expect(state.url).toEqual('/');
+			expect(state.url).toEqual('');
 		});
 
 		it('should have the correct template', function () {
@@ -27,7 +27,7 @@ describe('Routes', function () {
 		it('should have the correct URL', function () {
 			state = $state.get('home.notifications');
 
-			expect(state.url).toEqual('notifications');
+			expect(state.url).toEqual('/notifications');
 		});
 
 		it('should have the correct template', function () {
@@ -41,7 +41,7 @@ describe('Routes', function () {
 		it('should have the correct URL', function () {
 			state = $state.get('home.timeline');
 
-			expect(state.url).toEqual('timeline');
+			expect(state.url).toEqual('/timeline');
 		});
 
 		it('should have the correct template', function () {
@@ -55,7 +55,7 @@ describe('Routes', function () {
 		it('should have the correct URL', function () {
 			state = $state.get('home.user');
 
-			expect(state.url).toEqual('user');
+			expect(state.url).toEqual('/user');
 		});
 
 		it('should have the correct template', function () {
